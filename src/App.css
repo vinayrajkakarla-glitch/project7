@@ -1,0 +1,96 @@
+.app{
+    height: 100%;
+    overflow: auto;
+
+    display: grid;
+    grid-template-rows: 50px auto 30px;
+}
+.app .header{
+    background: linear-gradient(90deg, purple, blue);
+    color: white;
+    line-height: 50px;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.app .footer{
+    background: linear-gradient(90deg, purple, blue);
+    color: white;
+    line-height: 30px;
+    font-size: 8pt;
+    padding-left: 10px;
+}
+.app .section{
+    overflow: auto;
+}
+.app .section table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.app .section table thead{
+    background: dodgerblue;
+    color: white;
+}
+.app .section table thead tr,
+.app .section table tbody tr
+{
+    height: 35px;
+}
+.app .section table tbody tr:nth-child(even){
+    background: whitesmoke;
+}
+.app .section table th,
+.app .section table td{
+    border: 1px solid #ddd;
+    padding: 0 5px;
+}
+.app .section table tbody tr td img{
+    height: 20px;
+    cursor: pointer;
+}
+.app .overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app .overlay .popup{
+    width: 600px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    display: grid;
+    grid-template-rows: 30px auto 15px;
+}
+.app .overlay .popup .popupHeader{
+    background: dodgerblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 10px;
+}
+.app .overlay .popup .popupFooter{
+    background: dodgerblue;
+}
+.app .overlay .popup .popupSection{
+    padding: 10px;
+}
+.app .overlay .popup .popupHeader button{
+    border: none;
+    color: white;
+    background: none;
+    cursor: pointer;
+}
+.app .overlay .popup p{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
